@@ -10,6 +10,10 @@ Build XenServer/XCP compatible images with Boxgrinder.
 
 Previous Boxgrinder knowledge assumed.
 
+* VirtualBox (http://virtualbox.org)
+
+The plugin needs VBoxManage to convert the template to VHD.
+
 #Installation
 
     gem install boxgrinder-xenserver-platform-plugin
