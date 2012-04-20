@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Boxgrinder-xenserver-platform-plugin : Xenserver platform plugin for Boxgrinder" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Boxgrinder-xenserver-platform-plugin</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/bvox/boxgrinder-xenserver-platform-plugin">Fork Me on GitHub</a>
+
+          <h1 id="project_title">Boxgrinder-xenserver-platform-plugin</h1>
+          <h2 id="project_tagline">Xenserver platform plugin for Boxgrinder</h2>
+
+          <section id="downloads">
+            <a class="zip_download_link" href="https://github.com/bvox/boxgrinder-xenserver-platform-plugin/zipball/master">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/bvox/boxgrinder-xenserver-platform-plugin/tarball/master">Download this project as a tar.gz file</a>
+          </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p><img src="http://bvox.net/images/logo-bvox-big.png" alt="BVox"></p>
+
+<h1>Boxgrinder XenServer Platform Plugin</h1>
+
+<p>Build XenServer/XCP compatible images with Boxgrinder.</p>
+
+<h1>Requirements</h1>
+
+<ul>
+<li>Boxgrinder (<a href="http://boxgrinder.org">http://boxgrinder.org</a>)</li>
+</ul><p>Previous Boxgrinder knowledge assumed.</p>
+
+<ul>
+<li>VirtualBox (<a href="http://virtualbox.org">http://virtualbox.org</a>)</li>
+</ul><p>The plugin needs VBoxManage to convert the template to VHD.</p>
+
+<h1>Installation</h1>
+
+<pre><code>gem install boxgrinder-xenserver-platform-plugin
+</code></pre>
+
+<h1>Usage</h1>
+
+<p>Building Ubuntu appliances:</p>
+
+<pre><code>boxgrinder-build -lboxgrinder-ubuntu-plugin,xenserver-platform-plugin -p xenserver oneiric.appl
+</code></pre>
+
+<p>Building Fedora/CentOS appliances:</p>
+
+<pre><code>boxgrinder-build -lxenserver-platform-plugin -p xenserver fedora.appl
+</code></pre>
+
+<p>Note that to build Ubuntu appliances, you need to run Boxgrinder in Ubuntu. Building Ubuntu appliances from Fedora won't work. Building Fedora appliances from Ubuntu won't work either.</p>
+
+<p>Get some tested appliance definitions for XenServer from <a href="https://github.com/bvox/boxgrinder-appliances/tree/master/bvox">https://github.com/bvox/boxgrinder-appliances/tree/master/bvox</a></p>
+
+<h1>Building the plugin</h1>
+
+<pre><code>rake build
+</code></pre>
+
+<h1>Copyright</h1>
+
+<p>Copyright (c) 2012 BVox S.L. See LICENSE.txt for
+further details.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Boxgrinder-xenserver-platform-plugin maintained by <a href="https://github.com/bvox">bvox</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
